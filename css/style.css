@@ -134,6 +134,25 @@ max-width: 100%;
 max-height: 100%;
 }
 
+.btn {
+  margin-top: 10px;
+  margin-left: 30px;
+  background-color: rgb(68, 255, 30);
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 10px;
+  z-index: 9;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: rgb(41, 199, 10);
+}
+
+
 .jumbotron { 
   padding: 10px; /* fills out the jumbotron */
   background-color: rgb(14, 103, 204);
@@ -182,7 +201,7 @@ max-height: 100%;
   justify-content: space-around;
   flex-wrap: wrap;
   position: absolute;
-  top: 10px;
+  top: 20px;
 
 }
 
@@ -309,12 +328,14 @@ img.cardb {
       /* On small screens, we are no longer using row direction but column */
       flex-direction: column;
       max-width: 100;
+      
     }
 
     .cards-list {
       /* On small screens, we are no longer using row direction but column */
       flex-direction: column;
       max-width: 100;
+      top:20px;
     }
 
     .twitter {
