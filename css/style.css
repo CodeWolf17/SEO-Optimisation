@@ -1,17 +1,47 @@
 /* @import url("https://fonts.googleapis.com/css?family=Open+Sans"); */
+
 html {
   font-family: Arial;
   font-size: 16px;
   background: rgb(14, 103, 204);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+* a {
+  text-decoration: none;
+}
+
+
+.h7 {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: #FFF;
+}
+
+.h8 {
+  text-align: left;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  color: rgb(0, 0, 0);
 }
 
 .sidebar {
   position: fixed;
   width: 25%;
-  height: 100vh;
+  height: 100%;
   background: rgb(1, 46, 97);
   font-size: 0.65em;
 }
+
+.sidebar2 {
+  display: none;
+}
+
 
 .nav {
   position: relative;
@@ -63,6 +93,8 @@ html {
   width: 75%;
   float: right;
   height: 100vh;
+  
+      
 }
 .twitter .container {
   display: flex;
@@ -70,6 +102,10 @@ html {
   align-items: center;
   justify-content: center;
   height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 10px;
+  position: absolute;
 }
 .twitter a {
   position: relative;
@@ -87,9 +123,19 @@ html {
   margin-top: 20px;
 }
 
+.anti-overlap {
+z-index: 0;
+width: 100%;
+justify-content: space-around;
+flex-wrap: wrap;
+position: absolute;
+top: 10px;
+max-width: 100%;
+max-height: 100%;
+}
 
 .jumbotron { 
-  padding: 30px; /* fills out the jumbotron */
+  padding: 10px; /* fills out the jumbotron */
   background-color: rgb(14, 103, 204);
 }
 
@@ -101,7 +147,16 @@ html {
 
 .jumbotron .container { 
   max-width: 100%; /* allows the jumbotron to adjust on smaller widths */
-  background-color: #222;
+  
+}
+
+.jumbotron2 { 
+  padding: 20px; /* fills out the jumbotron */
+  background-color: rgba(1, 46, 97, 0.541);
+  width: 75%;
+  float: right;
+  position: relative;
+  margin-right: -30px;
 }
 
 .jumbotron h1 { 
@@ -115,3 +170,170 @@ html {
 
 #parent { white-space: nowrap; }
 .child { display: inline-block; }
+
+
+
+/*****************************CARD CSS************************************/
+/*****************************CARD CSS************************************/
+.cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 10px;
+
+}
+
+
+.card {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.cardaf {
+  width:120px;
+  height:240px;
+  margin: 30px auto;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.card .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
+}
+
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+.cardaf:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+.title-white {
+  color: white;
+}
+
+.title-black {
+  color: black;
+}
+
+
+/*****************************CARD CSS END************************************/
+/*****************************CARD CSS END************************************/
+
+
+
+/*****************************business CSS ************************************/
+/*****************************business CSS ************************************/
+
+
+
+.cardb {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 60%;
+  border-radius: 5px;
+  border-radius: 10px 10px 20px 20px;
+}
+
+.cardb:hover {
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+}
+
+img.cardb {
+  border-radius: 5px 5px 0 0;
+}
+
+.containerb {
+  padding: 2px 18%;
+  background-color: rgba(255, 255, 255, 0.849);
+  border-radius: 0px 0px 20px 20px;
+  
+}
+
+
+
+
+
+/*****************************business CSS end ************************************/
+/*****************************business CSS end************************************/
+@media only screen and (max-width: 700px) {
+
+    .sidebar {
+      visibility:hidden;
+    }
+
+    .sidebar2 {
+      display:block;
+      position: fixed;
+      width: 10%;
+      height: 100%;
+      background: rgb(1, 46, 97);
+      font-size: 0.65em;
+      z-index: 9;
+    }
+
+    .card-list {
+      /* On small screens, we are no longer using row direction but column */
+      flex-direction: column;
+      max-width: 100;
+    }
+
+    .cards-list {
+      /* On small screens, we are no longer using row direction but column */
+      flex-direction: column;
+      max-width: 100;
+    }
+
+    .twitter {
+      position: relative;
+      width: 100%;
+      float: right;
+      height: 100vh;
+      max-width: 100%;
+
+    }
+
+    .jumbotron2 { 
+      padding: 20px; /* fills out the jumbotron */
+      background-color: rgba(1, 46, 97, 0.541);
+      width: 100%;
+      float: right;
+      position: relative;
+    }
+
+  
+
+  }

@@ -18,3 +18,14 @@ MASOUD ABDALLAH MAHAMUDU-NIT/BIT/2020/1418
 WILFRED D SILAYO NIT/BIT/2020/1379
 
 ###############################################
+
+Mobile App Link 
+https://gonative.io/share/yolqwj
+https://gonative.io/app/nqgzr2d9ankdqtp36ndd958xg8/manage
+
+Website Link
+https://kilotonics.web.app/promo.html
+
+Affiliate account
+x2
+https://affiliate-program.amazon.com/home/productlinks/customize?asin=B08FYTRF6J
